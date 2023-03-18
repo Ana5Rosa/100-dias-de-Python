@@ -8,6 +8,6 @@ totalPercentage = float(totalPercentage)
 totalPeople = float(totalPeople)
 
 totalPercentage /= 100
-result = round(((totalBill * totalPercentage) + totalBill) / totalPeople, 2)
+result = "{:.2f}".format(round(((totalBill * totalPercentage) + totalBill) / totalPeople, 2))
 
 print(f"Each person should pay: ${result}")
